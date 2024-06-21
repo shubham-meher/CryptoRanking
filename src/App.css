@@ -1,0 +1,498 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.navbar-brand:hover{
+  color: white !important;
+}
+.card{
+  border: none !important;
+
+  color: white;
+  background: #2C3E50 !important;
+  border-radius: 20px !important;
+}
+#searchlist:hover{
+  background-color: #676767bd;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button.round {
+  background-color: #48abe0;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  box-shadow: 0 2px 4px darkslategray;
+  border-radius: 50%;
+  cursor: pointer;
+ transition: all 0.2s ease;
+}
+button.round:hover {
+  background-color: #65b9e6;
+ }
+ 
+ button.round:active {
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+ }
+ .typewriter h1  {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(250, 250, 250); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .025em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0;opacity:0;}
+  1% { opacity:1; }
+  100% {opacity:1;
+     width: 100%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255); }
+  100% { border-color: rgb(236, 236, 242); }
+}
+.object {
+  animation: MoveUpDown 1.5s linear infinite;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+
+tr:hover{
+  background-color: #c5c7cc;
+}
+hr{
+  margin: 0px;
+}
+tr{
+  margin : 0px
+}
+.table-borderless{
+  margin-bottom: 0px;
+}
+.dataResult {
+  margin-top: 5px;
+  width: 220.8px;
+  margin-right: 6.5vw; 
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.form-control{
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width : 1344px) {
+  #heading{
+    font-size: 4rem !important;
+  }
+  .object {
+    animation: MoveUpDown 1.5s linear infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }
+  #bitcoinimage{
+    height: 200px !important;
+    width: 200px !important;
+  }
+  #headingD{
+    font-size: 4rem !important;
+  }
+  #tabhead{
+    font-size: 2.3rem !important;
+    margin-left: 10vw !important;
+  }
+  #chooseUs{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .round{
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 1rem !important;
+  }
+  #table{
+    overflow: hidden !important;
+    overflow-x: auto !important;
+    margin: auto 10vw !important;
+  }
+  #topcrypto{
+    flex-direction: column !important;
+    gap: 0px !important;
+  }
+  #topimages{
+    height: 120px !important;
+    width: 120px !important;
+  }
+  #topname{
+    font-size: 1.2rem !important;
+  }
+  #topprices{
+    font-size: 1.2rem !important;
+  }
+  .TabH{
+    font-size: 1.4rem !important;
+    width : 200px !important;
+  }
+  
+  .TabD{
+    font-size: 1.2rem !important;
+    width : 200px !important;
+  }
+  /* #market{
+    padding-top: 90px !important ;
+  } */
+  #homepage{
+    padding-top: 90px !important;
+  }
+  #tablecoin{
+    padding-top: 70px !important;
+  }
+
+}
+@media screen and (max-width : 1400px) {
+  #Container{
+    flex-direction: column !important;
+    font-size: 1rem !important; 
+    align-items: center !important;
+    margin-top: 20% !important;
+  }
+
+}
+@media screen and (max-width : 800px) {
+  #detailimage{
+    height : 220px !important;
+    width : 220px !important;
+  }
+  #info{
+    width : 90vw !important;
+    height: 70vh !important;
+  }
+  #description{
+    width : 80vw!important;
+    height: 80% !important;
+    margin:30px auto !important;
+  }
+  .image{
+    width: 80% !important;
+  }
+  #detailheading{
+    flex-direction: column !important;
+  }
+  #chart{
+    width : 650px !important;  
+  }
+}
+@media screen and (max-width : 992px) {
+  #search{
+    right : 82px !important;
+    width : 130px !important;
+  }
+  #navitems{
+    margin-left:auto !important;
+  }
+  #choosegrad{
+    font-size: 6rem !important;
+  }
+  #heading2{
+    font-size: 6rem !important;
+  }
+  #chooseus{
+    padding-top: 80px !important ;
+  }
+  #tablecoin{
+    height: 120vh !important;
+  }
+  .navbar-brand{
+    margin-left:3vw !important;
+    font-size: 1.7rem !important;
+  }
+ 
+}
+body{
+  background-image: linear-gradient(180deg, rgba(15,57,100,1) 1%, rgba(0,0,0,1) 99%) !important;
+  font-family:'Kanit';
+  color: rgb(252, 253, 254) !important;
+}
+#tableheading{
+  background: linear-gradient(138deg, rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+}
+#navbarr{
+  background: rgba(15,57,100,1)  !important;
+}
+
+.navbar-brand{
+  margin-left:7.5vw;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color:'white' !important;
+  
+}
+.navbar-light .navbar-brand {
+  color: rgba(255, 251, 251, 0.9);
+  
+}
+.navbar-light .navbar-nav .nav-link {
+  color:rgba(255, 251, 251, 0.9);
+  font-size: 1.3rem !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  font-size: 1.3rem;
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  font-size: 1.3rem !important;
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%) !important;
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+#headingD{
+  font-size: 7.5rem;
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#choosegrad{
+  font-size: 7rem;
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#fb:hover{
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  color: rgb(103, 255, 204);   
+  background-color: rgb(103, 255, 204);
+}
+.footergrad:hover{
+  
+  background: -webkit-linear-gradient( rgba(19,182,40,1) 0%, rgba(0,212,255,1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footergrad{
+  font-size: 1.1rem !important;
+}
+tr:hover{
+  background-color: #1f2b5f !important;
+ 
+}
+#tableheading{
+  border-radius:8px 8px 0 0 !important;
+}
+#toplink:hover{
+  background-color:  rgba(15,57,100,1)  !important;
+  border-radius: 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+        /* KEYFRAMES */
+
+        @keyframes spin {
+          from {
+            transform: rotate(0);
+          }
+          to{
+            transform: rotate(359deg);
+          }
+        }
+        
+        @keyframes spin3D {
+          from {
+            transform: rotate3d(.5,.5,.5, 360deg);
+          }
+          to{
+            transform: rotate3d(0deg);
+          }
+        }
+        
+        @keyframes configure-clockwise {
+          0% {
+            transform: rotate(0);
+          }
+          25% {
+            transform: rotate(90deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(270deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        
+        @keyframes configure-xclockwise {
+          0% {
+            transform: rotate(45deg);
+          }
+          25% {
+            transform: rotate(-45deg);
+          }
+          50% {
+            transform: rotate(-135deg);
+          }
+          75% {
+            transform: rotate(-225deg);
+          }
+          100% {
+            transform: rotate(-315deg);
+          }
+        }
+        
+        @keyframes pulse {
+          from {
+            opacity: 1;
+            transform: scale(1);
+          }
+          to {
+            opacity: .25;
+            transform: scale(.75);
+          }
+        }
+        
+        /* GRID STYLING */
+        
+        
+        
+                .leo-border-1 {
+          /* position: absolute; */
+          width: 150px;
+          height: 150px;
+          padding: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background: rgb(63,249,220);
+          background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgba(63,249,220,1) 100%);
+          animation: spin3D 1.8s linear 0s infinite;
+        }
+        
+        .leo-core-1 {
+          width: 100%;
+          height: 100%;
+          background-color: #37474faa;
+          border-radius: 50%;
+        }
+        
+        /* .leo-border-2 {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          padding: 3px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background: rgb(45, 113, 181);
+          background: linear-gradient(0deg, rgba(244, 238, 238, 0.536) 33%, rgba(45, 113, 181) 100%);
+          animation: spin3D 2.2s linear 0s infinite;
+        }
+        
+        .leo-core-2 {
+          width: 100%;
+          height: 100%;
+          background-color: #1d2630aa;
+          border-radius: 50%;
+        } */
+
+        .form-control{
+          color: #cfcfcf !important;
+          background-color: #2C3E50 !important;
+        }
+        #loader{
+          z-index: -5;
+        }
+
+
+        .me-2 {
+          margin-right: 0rem!important;
+      }
+
+      
